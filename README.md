@@ -1,4 +1,4 @@
-# SLAP-GES: Scoring Lupus Activity Transcriptomic Signature
+# SLE Activity Platelet - Gene Expression Signature
 
 ## Overview
 
