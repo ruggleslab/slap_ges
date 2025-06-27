@@ -127,8 +127,6 @@ names(signature_scores) <- colnames(se)
 ```r
 # Add scores to colData
 colData(se)$SLAP_GES_score <- signature_scores
-colData(se)$SLAP_GES_up_score <- slap_ges_scores$UpScore
-colData(se)$SLAP_GES_down_score <- slap_ges_scores$DownScore
 
 # Convert to data frame for easier manipulation
 sample_data <- as.data.frame(colData(se))
@@ -176,13 +174,13 @@ print(p1)
 
 ### Score Interpretation
 
-- **Higher SLAP-GES scores**: Indicate higher lupus activity (up-regulated genes are highly expressed, down-regulated genes are lowly expressed)
-- **Lower SLAP-GES scores**: Indicate lower lupus activity
+- **Higher SLAP-GES scores**: Indicate higher lupus activity and cardiovascular risk(up-regulated genes are highly expressed, down-regulated genes are lowly expressed)
+- **Lower SLAP-GES scores**: Indicate lower lupus activity and cardiovascular risk
 - **Score range**: Typically ranges from negative to positive values, with the exact range depending on your dataset
 
 ### Score Components
 
-- **TotalScore**: Combined score incorporating both up and down gene sets
+- **TotalScore**: Combined score representing **SLAP-GES**
 - **UpScore**: Score based only on up-regulated genes
 - **DownScore**: Score based only on down-regulated genes (note: this is typically negative)
 
@@ -190,13 +188,13 @@ print(p1)
 
 ### Common Issues
 
-1. **Low gene overlap**: If many signature genes are missing from your data:
+1. **Low gene overlap**: If all signature genes are missing from your data:
    - Check gene naming conventions (HGNC symbols vs Ensembl IDs)
-   - Consider gene mapping/conversion
+   - Make sure mapping is to hg38
    - Evaluate if your platform captures the signature genes
 
 2. **Unexpected score distributions**:
-   - Verify data normalization
+   - Verify data normalization (variance stabilization from DESeq2 is recommended)
    - Check for batch effects
    - Ensure proper sample QC
 
@@ -207,8 +205,8 @@ print(p1)
 Please cite the original SLAP-GES publication and the singscore package:
 
 ```text
-# SLAP-GES citation (replace with actual publication details)
-# [Citation for SLAP-GES signature]
+# SLAP-GES citation
+# [TBD]
 
 # singscore citation
 Foroutan, M., Bhuva, D. D., Lyu, R., Horan, K., Cursons, J., & Davis, M. J. (2018). 
@@ -217,7 +215,7 @@ Single sample scoring of molecular phenotypes. BMC bioinformatics, 19(1), 1-10.
 
 ## Contact
 
-For questions or issues with this tutorial, please contact [your contact information].
+For questions or issues with this tutorial, please contact [mm12865@nyu.edu].
 
 ## Session Information
 
