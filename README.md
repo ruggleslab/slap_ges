@@ -18,9 +18,6 @@ slap_ges/
 ├── data/
 │   ├── slap-ges_up.txt      # Up-regulated gene list (313 genes)
 │   └── slap-ges_down.txt    # Down-regulated gene list (235 genes)
-├── src/
-│   ├── make_dataset.R       # Data preparation functions
-│   └── score_slap_ges.R     # Main scoring script
 └── README.md               # This file
 ```
 
