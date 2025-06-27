@@ -30,7 +30,7 @@ Install the following R packages before running the analysis:
 ```r
 ```r
 # Check if packages are installed and install if needed
-required_packages <- c("tidyverse", "magrittr")
+required_packages <- c("tidyverse")
 bioc_packages <- c("singscore", "SummarizedExperiment")
 
 # Check and install CRAN packages
@@ -222,5 +222,54 @@ For questions or issues with this tutorial, please contact [your contact informa
 ## Session Information
 
 ```r
-sessionInfo()
-```
+R version 4.4.3 (2025-02-28)
+Platform: aarch64-apple-darwin24.2.0
+Running under: macOS Sequoia 15.5
+
+Matrix products: default
+BLAS:   /opt/homebrew/Cellar/openblas/0.3.29/lib/libopenblasp-r0.3.29.dylib 
+LAPACK: /opt/homebrew/Cellar/r/4.4.3_1/lib/R/lib/libRlapack.dylib;  LAPACK version 3.12.0
+
+locale:
+[1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
+
+time zone: America/New_York
+tzcode source: internal
+
+attached base packages:
+[1] stats4    stats     graphics  grDevices utils     datasets  methods  
+[8] base     
+
+other attached packages:
+ [1] SummarizedExperiment_1.36.0 Biobase_2.66.0             
+ [3] GenomicRanges_1.58.0        GenomeInfoDb_1.42.3        
+ [5] IRanges_2.40.1              S4Vectors_0.44.0           
+ [7] BiocGenerics_0.52.0         MatrixGenerics_1.18.1      
+ [9] matrixStats_1.5.0           singscore_1.26.0           
+[11] lubridate_1.9.4             forcats_1.0.0              
+[13] stringr_1.5.1               dplyr_1.1.4                
+[15] purrr_1.0.4                 readr_2.1.5                
+[17] tidyr_1.3.1                 tibble_3.2.1               
+[19] ggplot2_3.5.1               tidyverse_2.0.0            
+
+loaded via a namespace (and not attached):
+ [1] KEGGREST_1.46.0         gtable_0.3.6            lattice_0.22-6         
+ [4] tzdb_0.4.0              vctrs_0.6.5             tools_4.4.3            
+ [7] generics_0.1.3          AnnotationDbi_1.68.0    RSQLite_2.3.9          
+[10] blob_1.2.4              pkgconfig_2.0.3         Matrix_1.7-2           
+[13] graph_1.84.1            lifecycle_1.0.4         GenomeInfoDbData_1.2.13
+[16] compiler_4.4.3          Biostrings_2.74.1       statmod_1.5.0          
+[19] munsell_0.5.1           pillar_1.10.1           crayon_1.5.3           
+[22] limma_3.62.2            DelayedArray_0.32.0     cachem_1.1.0           
+[25] abind_1.4-8             locfit_1.5-9.11         tidyselect_1.2.1       
+[28] stringi_1.8.4           reshape2_1.4.4          fastmap_1.2.0          
+[31] grid_4.4.3              SparseArray_1.6.1       colorspace_2.1-1       
+[34] cli_3.6.5               magrittr_2.0.3          S4Arrays_1.6.0         
+[37] XML_3.99-0.17           GSEABase_1.68.0         edgeR_4.4.2            
+[40] withr_3.0.2             scales_1.3.0            UCSC.utils_1.2.0       
+[43] bit64_4.6.0-1           timechange_0.3.0        XVector_0.46.0         
+[46] httr_1.4.7              bit_4.6.0               png_0.1-8              
+[49] hms_1.1.3               memoise_2.0.1           rlang_1.1.6            
+[52] Rcpp_1.0.14             xtable_1.8-4            glue_1.8.0             
+[55] DBI_1.2.3               annotate_1.84.0         jsonlite_2.0.0         
+[58] plyr_1.8.9              R6_2.6.1                zlibbioc_1.52.0   ```
