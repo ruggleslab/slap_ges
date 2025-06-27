@@ -2,7 +2,7 @@
 
 ## Overview
 
-SLAP-GES (Systemic Lupus Activity Prediction - Gene Expression Signature) is a transcriptomic signature designed to assess lupus activity from gene expression data. This repository provides a tutorial for scoring the SLAP-GES signature using the `singscore` R package.
+SLAP-GES (SLE Activity Platelet - Gene Expression Signature) is a transcriptomic signature designed to assess lupus activity from gene expression data. This repository provides a tutorial for scoring the SLAP-GES signature using the `singscore` R package.
 
 ## What is SLAP-GES?
 
