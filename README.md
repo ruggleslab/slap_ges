@@ -174,8 +174,7 @@ print(p1)
 
 ### Score Interpretation
 
-- **Higher SLAP-GES scores**: Indicate higher lupus activity and cardiovascular risk(up-regulated genes are highly expressed, down-regulated genes are lowly expressed)
-- **Lower SLAP-GES scores**: Indicate lower lupus activity and cardiovascular risk
+- **Higher SLAP-GES scores**: Associated with higher lupus activity, increased platelet aggregation and impaired macro- and micro-vascular function. Altogether, higher SLAP-GES suggest higher cardiovascular risk (up-regulated genes are highly expressed, down-regulated genes are lowly expressed).
 - **Score range**: Typically ranges from negative to positive values, with the exact range depending on your dataset
 
 ### Score Components
